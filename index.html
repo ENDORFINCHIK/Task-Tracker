@@ -18,7 +18,7 @@
             <span><button class="btn">Today task</button></span>
             <span><button class="btn">This week</button></span>
             <span><button class="btn">This month</button></span>
-            <span><button class="btn">Add Task</button></span>
+            <span><button id="addTaskBtn" class="btn">Add Task</button></span>
         </div>
         <button id="btn-theme-color"><img id="theme-img" src="Images/Theme.png" alt=""></button>
     </div>
@@ -32,10 +32,14 @@
                     <td>Comment</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input id="nameTask" type="text"></td>
+                    <td ><input id="dateTask" type="date"></td>
+                    <td ><select id="statusTask">
+                        <option value="In progress">In progress</option>
+                        <option value="Done">Done</option>
+                        <option value="Started">Not started</option>
+                    </select></td>
+                    <td ><input id="commentTask" type="text"></td>
                 </tr>
             </table>
         </div>
