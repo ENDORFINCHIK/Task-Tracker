@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/light-theme-logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Task tracker</title>
 </head>
@@ -31,15 +32,17 @@
                     <td>Status</td>
                     <td>Comment</td>
                 </tr>
-                <tr>
                     <td><input id="nameTask" type="text"></td>
-                    <td ><input id="dateTask" type="date"></td>
-                    <td ><select id="statusTask">
+                    <td><input id="dateTask" type="date"></td>
+                    <td>
+                    <select id="statusTask">
+                        <option value=""></option>
                         <option value="In progress">In progress</option>
                         <option value="Done">Done</option>
-                        <option value="Started">Not started</option>
+                        <option value="Not started">Not started</option>
                     </select></td>
-                    <td ><input id="commentTask" type="text"></td>
+                    <td><input id="commentTask" type="text"></td> 
+                    <td class="deleteBtnField"><button class="deleteBtn">X</button></td>
                 </tr>
             </table>
         </div>
