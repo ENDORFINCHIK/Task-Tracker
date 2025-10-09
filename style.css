@@ -4,16 +4,31 @@ body{
     font-family: "Roboto";
     font-weight: bold;
 }
-
-
+/* Бічна панель з замітками*/
+.side-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #cecece;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
 
 /*Стилі верхньої панелі*/
-
+#logo{
+    margin-right: 50px;
+}
 .nav-panel{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .nav-panel-link{
     display: flex;
@@ -44,6 +59,7 @@ body{
 #btn-theme-color{
     background-color: #d9d9d900;
     border: 0;
+    margin-left: 50px;
 }
 .theme-light td,th{
     border: 1px solid black;
@@ -90,14 +106,14 @@ body{
     display: inline-block; /* щоб розмір підганявся */
     
 }
-table {
+.table-wrapper table{
     border-collapse: collapse;
     min-width: 80%;
 }
-td, th {
+.table-wrapper tr, tr {
     border: 1px solid black;
     padding: 4px 8px;
-    min-width: 200px;
+    width: 200px;
 }
 
 .flexbox-table{
@@ -106,14 +122,28 @@ td, th {
     align-items: center;
     justify-content: center;
 }
-#nameTask, #dateTask, #statusTask, #commentTask{
+.nameTask, .dateTask, .statusTask, .commentTask{
     width: 100%;
+    min-width: 200px;
     height: 100%;
     margin: 0;
     padding: 0;
     font-size: 15px;
     background-color: #d9d9d900;
     border: 0;
+    wrap: hard;
+    resize: vertical;
+    
+}
+#nameTask,#commentTask{
+    height: 20px;
+}
+.deleteBtnField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 10px;
 }
 .deleteBtn{
     background-color: #ff0000;
@@ -126,4 +156,10 @@ td, th {
     height: 30px;
     padding: 0;
     margin: 0;
+}
+/* Календар*/
+.calendar table{
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
